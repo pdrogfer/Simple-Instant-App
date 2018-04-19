@@ -1,0 +1,12 @@
+apply plugin: 'com.android.instantapp'
+
+android {
+
+    compileSdkVersion 27
+}
+
+
+dependencies {
+
+    implementation project(':app')
+}

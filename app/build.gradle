@@ -1,14 +1,18 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.feature'
 
 android {
+
     compileSdkVersion 27
+
+    baseFeature true
+
     defaultConfig {
-        applicationId "com.pgf.simpleinstantapp"
+//        applicationId "com.pgf.simpleinstantapp"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -19,7 +23,6 @@ android {
 }
 
 repositories {
-
     maven { url 'https://dl.bintray.com/square1io/maven/' }
     maven { url 'https://maven.fabric.io/public' }
     maven { url "https://jitpack.io" }
@@ -35,4 +38,5 @@ dependencies {
 
     implementation 'square1.io:publisherplussdk:1.0.24'
 
+    application project(':module_application')
 }
