@@ -34,7 +34,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    implementation 'square1.io:publisherplussdk:1.0.24'
-
     application project(':module_application')
 }
